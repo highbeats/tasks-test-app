@@ -1,0 +1,19 @@
+<div class="row">
+  <div class='container-fluid'>
+    <div class="panel panel-default">
+      <div class="panel-heading">Whooa!! Add task you <strong>{{name}}</strong> do.</div>
+      <div class="panel-body">
+        <div class="col-xs-3">
+          {{input type='text' value=title placeholder='Woot title doe?'class='form-control input-lg'}}
+        </div>
+        <div class='col-xs-6'>
+          {{input type='text' value=body placeholder='Any so very chill details?' class='form-control input-lg'}}
+        </div>
+        <div class='col-xs-3'>
+          <button {{action 'addTask'}} type='submit' class='btn btn-primary btn-lg'>YAAASSSS!</button>
+        </div>
+      </div>
+    </div>
+    {{view 'queue-panel'}}
+  </div>
+</div>

@@ -3,7 +3,9 @@ var Router = Ember.Router.extend({
   location: 'auto'
 });
 
-Router.map(function() {
+Router.map(function () {
+  this.route('task', { path: '/:task_id' });
+  this.route('queue', { path: '/:queue_id' });
 });
 
 export default Router;

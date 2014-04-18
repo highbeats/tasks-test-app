@@ -1,0 +1,10 @@
+{{#with controller}}
+  {{#each queues}}
+    {{#link-to 'queue' id class='list-group-item'}}
+      <span class="badge pull-right">
+        {{tasks.length}}
+      </span>
+      {{name}}
+    {{/link-to}}
+  {{/each}}
+{{/with}}

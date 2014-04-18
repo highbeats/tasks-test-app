@@ -1,3 +1,20 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <h5 class="navbar-brand">Grind<em>Cake</em></h5>
+    </div>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-md-4" style="background:#ddd;padding-top:16px;">
+      <div class="panel panel-default">
+        {{view 'queue-side-menu'}}
+      </div>
+    </div>
+    <div class="col-md-8">
+      {{outlet}}
+    </div>
+  </div>
+</div>
